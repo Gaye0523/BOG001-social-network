@@ -10,6 +10,7 @@ import { evento2 } from './lib/registro.js';
 import { validarRegistro } from './lib/registro.js';
 import { validarLogin } from './lib/login.js';
 import { observado } from './lib/login.js';
+/* import { validationFirebase } from './lib/registro.js'; */
 
 
 const header = document.getElementById("header")
@@ -42,8 +43,6 @@ const router = (route) => {
       show.appendChild(formRegistro);
       validarRegistro();
       evento2();
-      break;
-    case '#/login':
       break;
     default:
       return console.log('# ERROR 404')

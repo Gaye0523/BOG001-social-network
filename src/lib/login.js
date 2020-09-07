@@ -54,7 +54,7 @@ export default () => {
             <img src="Imagenes/facebook.svg" alt="icono-facebook" class="btnImg">
             </button>
             <button type="button" id="google">
-            <img src="Imagenes/ui.svg" alt="icono-google" class="btnImg">
+            <img src="Imagenes/ui.svg" alt="icono-google" class="btnImg1">
             </button>
             </div>
             <p class="access">¿OLVIDASTE TU CONTRASEÑA?</p>
@@ -75,8 +75,8 @@ export default () => {
 }
 
 export const eventos = () => {
-  const close = document.querySelector("#close-login")
 
+  const close = document.querySelector("#close-login")
   close.addEventListener('click', () => {
     console.log("Cerro!")
     router("")
@@ -139,7 +139,6 @@ export const eventos = () => {
       })
   })
 }
-
 
 export function observado() {
   auth.onAuthStateChanged(user => {

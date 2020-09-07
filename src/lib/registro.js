@@ -54,9 +54,7 @@ export const registro = () => {
           </div>
 
           <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-            <a href="#/closeRegistro" id="submit-btn" class="submit-btn">ACCEDER</a>
-            <button type="submit" class="submit-btn"><a href="#/formularioLogin">Enviar</a></button>
+            <button type="submit" class="submit-btn">Enviar</button>
           </div>
         </form>
       </div>
@@ -71,9 +69,10 @@ export const registro = () => {
 export const evento2 = () => {
   const closeRegister = document.querySelector("#close-Register")
 
-  closeRegister.addEventListener('click', (e) => {
+  closeRegister.addEventListener('', (e) => {
     console.log("Cerro registro")
     router("")
+
   })
 
   const botonEye = document.getElementById("boton");
@@ -94,7 +93,6 @@ export const evento2 = () => {
   });
 
   const singUp = document.querySelector('#formulario');
-  const goLogin = document.querySelector('#submit-btn')
   singUp.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log("Se vio")
@@ -107,14 +105,19 @@ export const evento2 = () => {
       .createUserWithEmailAndPassword(Email, Password)
       .then(function () {
         console.log("te has registrado exitosamente");
+        loadLogin();
         auth.currentUser.updateProfile({
-          displayName: displayName,
+          displayName: displayName
         });
       })
       .catch(error => {
         console.log('Oppss Hubo Problema, tu usuario no se registro, intentalo nuevamente')
       })
   })
+}
+
+export function loadLogin() {
+  window.location.hash = '#/formulario';
 }
 
 export const validarRegistro = () => {
@@ -169,25 +172,6 @@ export const validarRegistro = () => {
   inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
-  });
-
-  formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const terminos = document.getElementById('terminos');
-    if (campos.usuario && campos.password && campos.correo) {
-
-      document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-      setTimeout(() => {
-        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-      }, 5000);
-
-      document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-        icono.classList.remove('formulario__grupo-correcto');
-      });
-    } else {
-      document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    }
   });
 
   const goLogin = document.querySelector('#submit-btn1')
