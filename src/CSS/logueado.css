@@ -1,0 +1,361 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: boo;
+    src: url(HelloBoomerang.ttf);
+}
+
+@font-face{
+    font-family: delius;
+    src: url(Delius-Regular.ttf);
+}
+
+@font-face{
+    font-family: wildu;
+    src: url(CC-Wild-Word-Roman.ttf);
+}
+
+.navigation1{
+  display: flex;
+  margin-top: 6%;
+  margin-right: 8%;
+}
+
+.navigation1 ul{
+  margin: 0;
+  padding: 0;
+  color: black;
+  list-style: none;
+}
+
+.navigation1 ul li{
+  display: inline-block;
+  font-size: 2.5vw;
+  font-family: boo;
+  padding: 0.5rem 1rem;
+}
+
+.navigation1 ul li a:hover{
+  background-color: cadetblue;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.container3{
+  border: solid black 2px;
+  width: 90%;
+  padding: 8px 0 15px 10px;
+  margin-left: 5%;
+}
+
+.form-control{
+  border: none;
+  font-size: 1.5vw;
+  background-color: #E2E2E8;
+}
+
+#miid::placeholder {
+  padding-left: 50px;
+  padding-top: 50px;
+  font-family: delius;
+}
+
+.card-body{
+  border: black solid 2px;
+  width: 90%;
+  margin-left: 6%;
+  margin-top: 15%;
+}
+
+#public-button{
+  background-color: #7B709F;
+  text-decoration: none;
+  padding: 5px 5px;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: black;
+  font-family: boo;
+}
+
+.publicar{
+  width: 15%;
+}
+
+.button{
+  width: 20%;
+  height: 150px;
+  margin: -90px 852px
+}
+
+.foto{
+  width: 30%;
+}
+
+#foto-button1{
+  padding-top: 5%;
+  background-color: transparent;
+  border: none;
+  all: unset;
+  margin: 10px;
+}
+
+.video{
+  width: 25%;
+}
+
+#foto-button2{
+  right: 50%;
+  background-color: transparent;
+  border: none;
+  all: unset;
+  margin: -88px;
+}
+
+.musica{
+  width: 25%;
+}
+
+#foto-button3{
+  padding: 0px -50px;
+  background-color: transparent;
+  border: none;
+  all: unset;
+}
+
+.lista{
+  width: 70%;
+}
+
+#foto-button4{
+  background-color: transparent;
+  border: none;
+  all: unset;
+  margin: 7px -80px;
+}
+
+.fotob{
+  margin: 15px 0px 35px;
+  display: inline-block;
+}
+
+#publicacion{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.publicen{
+  width: 53%;
+  border: 2px solid black;
+  margin-left: 25%;
+  font-family: delius;
+  margin-bottom: 1%;
+}
+
+.completo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#imgIcon{
+  width: 5%;
+}
+
+.counter{
+  margin-left: -20%;
+}
+
+.likebutton{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.like{
+  width: 9%;
+}
+
+.likeHeart{
+  overflow: hidden;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.heart{
+    width: 6%;
+}
+
+.comentario{
+  margin: -54px 50px 81px 166px;
+}
+
+.comentar{
+  width: 11%;
+}
+
+.seccion{
+  padding-bottom: 2%;
+}
+
+@media (max-width: 500px) {
+
+  .card-body{
+      margin-top: 57%;
+  }
+
+  .form-control{
+      width: 100%;
+      height: 95px;
+      border: none;
+      font-size: 3vw;
+      background-color: #E2E2E8;
+    }
+    
+    #miid::placeholder {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+  .container3{
+      padding: 12px 0 22px 10px;
+  }
+  
+  .fotob{
+      margin: -58px 0px 24px;
+  }
+
+  .foto{
+      width: 10%;
+  }
+
+  #foto-button1{
+      padding-top: 25%;
+      margin: 0px -38px 0px -1px;
+  }
+
+  .video{
+      width: 10%;
+  }
+
+  .musica{
+      width: 10%;
+  }
+
+  #foto-button3{
+      margin: 0px -49px 0px -41px;
+  }
+
+  .video{
+      width: 10%;
+  }
+
+  .lista{
+      width: 40%;
+  }
+  
+  .button{
+      margin: -54px 181px -135px;
+      width: 30%;
+  }
+
+  #public-button{
+    font-size: 3vw;
+    margin-top: -4%;
+  }
+
+  .publicar{
+    width: 32%;
+  }
+
+  #publicacion {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  #imgIcon{
+    width: 14%;
+  }
+
+  .counter{
+    margin-left: -9%;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 900px){
+  .card-body{
+      margin-top: 43%;
+  }
+
+  .form-control{
+      width: 100%;
+      height: 100px;
+      border: none;
+      font-size: 3vw;
+      background-color: #E2E2E8;
+    }
+    
+    #miid::placeholder {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+  .container3{
+      padding: 48px 0px 12px 10px;
+  }
+  
+  .fotob {
+      margin-top: -79px;
+  }
+
+  .button{
+      margin: -93px 401px 0px;
+      width: 30%;
+      border: 2px solid;
+      height: 46px;
+  }
+
+  .publicen {
+    font-size: 3vw;
+  }
+
+  #publicacion {
+    width: 168%;
+    margin-left: -35%;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 1280px){
+  .card-body{
+      margin-top: 23%;
+  }
+
+  .form-control{
+      width: 100%;
+      height: 150px;
+      font-size: 2vw;
+    }
+    
+    .button{
+      margin: -94px 758px 0px;
+      width: 30%;
+      height: 46px;
+  }
+
+  .publicen {
+    font-size: 2vw;
+  }
+
+  #imgIcon {
+    width: 7%;
+  }
+
+  .counter{
+    margin-left: -18%;
+  }
+}

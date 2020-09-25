@@ -62,8 +62,8 @@ export const centro = () => {
 </div>
 
 <div class ="containerimg1">
-<img src="Imagenes/telefono.svg" class="imagen">
-<h3 class="h7"> Explora el universo del manganime</h3>
+<img src="Imagenes/buscar.svg" class="imagen">
+<h3 class="titulo"> Explora el universo del manganime</h3>
 <p class="p1">Busca entre animes, mangas, ovas y doramas.</p>
 </div>
 

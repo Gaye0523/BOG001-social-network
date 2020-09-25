@@ -104,10 +104,11 @@ export const eventos = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider)
       .then(result => {
-        console.log("resultado");
+        redirectToLogin();
+        swal.fire('bienvenido de nuevo')
       })
       .catch(err => {
-        console.log("error");
+        swal.fire("error");
       })
   })
 
@@ -117,11 +118,11 @@ export const eventos = () => {
     const provider = new firebase.auth.FacebookAuthProvider();
     auth.signInWithPopup(provider)
       .then(result => {
-        console.log(result);
-        console.log('facebook login')
+        redirectToLogin();
+        swal.fire('facebook login')
       })
       .catch(err => {
-        console.log((err))
+        swal.fire((err))
       })
   })
 
@@ -132,10 +133,11 @@ export const eventos = () => {
     auth
       .signInWithEmailAndPassword(Usuario, password)
       .then(userCredential => {
-        console.log('Bienvenido de nuevo')
+        redirectToLogin();
+        swal.fire('Bienvenido de nuevo')
       })
       .catch(error => {
-        console.log('Tu correo o contraseña estan mal')
+        swal.fire('Tu correo o contraseña estan mal')
       })
   })
 }
@@ -146,7 +148,6 @@ export function observado() {
       console.log('existe usuario activo')
       const displayName = user.displayName;
       const email = user.email;
-      console.log(user)
       const emailVerified = user.emailVerified;
       const photoURL = user.photoURL;
       const isAnonymous = user.isAnonymous;
@@ -159,11 +160,9 @@ export function observado() {
   })
 }
 
-/*   singUp.addEventListener('submit', (e) => {
-    e.preventDefault(e);
-    console.log('Intentando Registro')
-    router("")
-  }) */
+export function redirectToLogin() {
+  window.location.hash = '#/Login';
+}
 
 export const validarLogin = () => {
   const formLogin = document.getElementById('form');

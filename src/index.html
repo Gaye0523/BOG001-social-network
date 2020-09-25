@@ -9,7 +9,10 @@
   <script src="https://kit.fontawesome.com/aaa937e259.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="Imagenes/Logo-1.png" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/logueado.css">
+  <link rel="stylesheet" href="/CSS/anime.css">
+  <link rel="stylesheet" href="/CSS/cssPerfil.css">
   <title>Anime Social Shojo</title>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -20,7 +23,13 @@
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-  <!-- <script> src = "https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js" ></script>-->
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+
+
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -37,7 +46,6 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     let auth = firebase.auth();
-      //let fs = firebase.firestore();
   </script>
 </head>
 
