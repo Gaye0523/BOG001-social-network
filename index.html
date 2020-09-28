@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/aaa937e259.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="Imagenes/Logo-1.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/logueado.css">
+  <link rel="stylesheet" href="/CSS/anime.css">
+  <link rel="stylesheet" href="/CSS/cssPerfil.css">
+  <title>Anime Social Shojo</title>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDu1ZzQAEzQIU6f9Eu7QqXOWLE4yIDMQxs",
+      authDomain: "animeshojosocial.firebaseapp.com",
+      databaseURL: "https://animeshojosocial.firebaseio.com",
+      projectId: "animeshojosocial",
+      storageBucket: "animeshojosocial.appspot.com",
+      messagingSenderId: "800604779949",
+      appId: "1:800604779949:web:28785067ff074e77b09d24",
+      measurementId: "G-LRBL4GQSJ0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    let auth = firebase.auth();
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="header"></div>
+    <div id="show"></div>
+  </header>
+  <main>
+    <div id="vista"></div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="container-fila">
+        <p4>SocialAnimeShojo © 2020. All Rights Reserved.</p4>
+        <h3 class="h3"> Privacidad - Contacto</h3>
+      </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  </div>
+</body>
+
+</html>
